@@ -3,7 +3,12 @@
 <title>KoolShow</title>
 </head>
 <body>
-<h1>欢迎来到酷烧主页</h1>
-<script type="text/javascript" > document.write( navigator.userAgent); </script>
+<script type="text/javascript" >
+if(navigator.userAgent!="KSExplorer"){
+	while(true){
+		alert("请使用酷烧大神浏览")
+	}
+}
+</script>
 </body>
 </html>
