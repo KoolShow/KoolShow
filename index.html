@@ -2,17 +2,23 @@
 <head>
 <title>KoolShow</title>
 </head>
-<body>
+<script type="text/javascript" >
+if(navigator.userAgent!="KSExplorer"){
+	
+	alert("请使用酷烧大神浏览,您当前的浏览器是:"+navigator.userAgent);
+	function check(){
+		window.location.href='dashen.apk';
+	};
+}else{
+	function check(){};
+};
+</script>
+<body onload="check()">
 <script type="text/javascript" src="sha256.js">
 </script>
 <script type="text/javascript" >
-if(navigator.userAgent!="KSExplorer"){
-	document.write("<p><br>请使用酷烧大神浏览,您当前的浏览器是:</br></p>");
-	document.write(navigator.userAgent);
-}else{
-	document.write("<h1>欢迎来到酷烧大神</h1>");
-	document.write(sha256_digest("hi"));
-}
+document.write("<h1>欢迎来到酷烧大神</h1>");
+char shastr[] ="cdda382c02fdbda5a91f173d17e33d83f0e76e1099eee2bbbc7bc87abe3d4622 ";
 </script>
 </body>
 </html>
